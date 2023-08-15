@@ -3,12 +3,12 @@
 Avtor: Lovro Brulec
 
 Pri predmetu Uvod v programiranje sem pripravil projektno nalogo iz analize podatkov.
-Z uporabo programskega jezika python in orodij za pridobivanje podatkov ter knjižnic, kot je Beautiful Soup, sem izvedel analizo in pridobil ključne informacije iz oglasov za delo na spletni strani https://www.mojedelo.com/. Skupaj z analizo podatkov sem preučil tudi optimalnost različnih metod za prenos podatkov iz spleta. To mi je omogočilo boljše razumevanje prednosti, omejitev in potencialnih izzivov pri pridobivanju podatkov ter zagotovilo časovno učinkovito analizo.
+Z uporabo programskega jezika python in orodij za pridobivanje podatkov ter knjižnic, kot je _BeautifulSoup_, sem izvedel analizo in pridobil ključne informacije iz oglasov za delo na spletni strani https://www.mojedelo.com/. Skupaj z analizo podatkov sem preučil tudi optimalnost različnih metod za prenos podatkov iz spleta. To mi je omogočilo boljše razumevanje prednosti, omejitev in potencialnih izzivov pri pridobivanju podatkov ter zagotovilo časovno učinkovito analizo.
 
 
 ## Rezultati
 
-Rezultate in ugotovitve te analize lahko najdete v Jupyter Notebook datoteki projektna.ipynb. Posebej je poudarjeno, da nekateri grafi v Notebooku omogočajo interaktivnost, kar vam omogoča samostojno spreminjanje podatkov s pomočjo interaktivnih drsnikov.
+Rezultate in ugotovitve te analize lahko najdete v Jupyter Notebook datoteki _projektna.ipynb_. Posebej je poudarjeno, da nekateri grafi v Notebooku omogočajo interaktivnost, kar vam omogoča samostojno spreminjanje podatkov s pomočjo interaktivnih drsnikov.
 
 
 ## Navodila za uporabo
@@ -37,4 +37,4 @@ V terminalu vnesite ukaz:
 jupyter notebook
 ```
 * S tem se bo odprl brskalnik in prikazal seznam datotek v repozitoriju.
-* Kliknite na datoteko projektna.ipynb, da odprete Jupyter Notebook.
+* Kliknite na datoteko _projektna.ipynb_, da odprete Jupyter Notebook.
