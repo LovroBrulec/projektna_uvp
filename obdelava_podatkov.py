@@ -75,7 +75,7 @@ def plot_mesec_povp():
     plt.bar(average_by_month['Month'], average_by_month['Povprecje'])
     plt.xlabel('Mesec')
     plt.ylabel('Poprečno število ponudb')
-    plt.title(f'Povprečno mesečno število ponudb glede na leta 2005-2022')
+    plt.title(f'Povprečno mesečno število ponudb glede na leta 2004-2022')
     plt.xticks(range(1, 13), ['Jan', 'Feb', 'Mar', 'Apr', 'Maj', 'Jun', 'Jul', 'Avg', 'Sep', 'Okt', 'Nov', 'Dec'])
     plt.show()
 
@@ -375,9 +375,5 @@ def plot_heatmap(st_ponudnikov=3,st_lokacij=10):
     plt.tight_layout()
     plt.show()
 
-plot_best_ponudnik()
-plot_heatmap()
-plot_letno()
-plot_mesec_povp()
 
 

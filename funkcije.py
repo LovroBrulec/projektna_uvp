@@ -37,16 +37,22 @@ def test_writerow(all_data):
 
 def fetch_data(interval):
     """
-    Pridobivanje podatkov iz spletne strani za dani interval.
+    Pridobivanje podatkov iz spletne strani za dani (ID oglasa).
 
     :param interval: Interval za pridobivanje podatkov s spleta.
     :return: Seznam podatkov za dani interval ali None, če zahteva ne uspe.
     """
+    # Pridobi spletno vsebino iz določenega URL-ja, ki vključuje interval (ID oglasa)
     html = requests.get(link + str(interval))
+    # Preveri, ali je odgovor strežnika uspešen (status koda 410 ali 200)
     if html.status_code in [410, 200]:
+         # Ustvari objekt soup za analizo HTML vsebine
         soup = bs(html.text, 'html5lib')
+        # Iskanje HTML elementa z razredom "page-title" v analizirani vsebini. (Ponudnik,Datum,Lokacija,Spol)
         okence = soup.find("div", {"class": "page-title"})
+         # Izberi besedilno vsebino elementov z razredom "boxItemGroup" (prvih 4)
         data_temp = [item.get_text(strip=True) for item in okence.find_all("div", {"class": "boxItemGroup"})[0:4]]
+        # Dodaj Ponudnik na začetek seznama data_temp
         data_temp = [okence.findChildren()[1].get_text(strip=True)] + data_temp
         return data_temp
     return None
